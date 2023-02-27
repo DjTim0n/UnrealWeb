@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map of Tourist Places in Kazakhstan</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  </head>
+  <body>
+    <div id="map" style="height: 500px;"></div>
+  </body>
+</html>
+<script>
+  // Create a map centered at a location
+  function initMap() {
+    var center = {lat: 51.1605, lng: 71.4704};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 6,
+      center: center
+    });
+
+    // Add markers for tourist places in Kazakhstan
+    var touristPlaces = [
+      {
+        name: 'Big Almaty Lake',
+        lat: 43.1659,
+        lng: 77.0291
+      },
+      {
+        name: 'Charyn Canyon',
+        lat: 43.3433,
+        lng: 79.0436
+      },
+      {
+        name: 'Kolsai Lakes',
+        lat: 43.1981,
+        lng: 79.0908
+      },
+      {
+        name: 'Medeu Skating Rink',
+        lat: 43.1772,
+        lng: 77.0383
+      },
+      {
+        name: 'Shymbulak Ski Resort',
+        lat: 43.1109,
+        lng: 77.0488
+      }
+    ];
+
+    touristPlaces.forEach(function(place) {
+      var marker = new google.maps.Marker({
+        position: {lat: place.lat, lng: place.lng},
+        map: map,
+        title: place.name
+      });
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
