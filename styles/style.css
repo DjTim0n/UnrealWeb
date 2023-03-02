@@ -16,13 +16,14 @@ body {
 }
 
 .cont {
-    max-width: 1520px;
+    width: 100vh;
     margin: 0 auto;
     width: 100%;
 }
 
 .header {
     position: fixed;
+    width: 100vh;
     width: 100%;
     overflow: hidden;
 }
@@ -44,19 +45,26 @@ body {
     justify-content: center;
 }
 
+.li {
+    margin: 0 90px 0 0;
+}
+
 .li>a {
+    font-family: 'Sen';
     font-size: 50px;
     font-weight: 700px;
+    font-size: 16px; 
     color: #fff;
-    margin: 0 90px 0 0;
     cursor: pointer;
     transition: 0.25s;
-    font-size: 16px;
 }
+
+.li_current {
+    margin: 0 90px 0 0;
+} 
 
 .li_current>a {
     color: #EDCD1F;
-    margin: 0 90px 0 0;
     transition: 0.25s;
     font-size: 16px;
 }
@@ -77,7 +85,6 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    max-width: 1520px;
     min-height: 1080px;
     background: transparent url('https://all.accor.com/magazine/imagerie/1-619b.jpg') no-repeat center center / cover;
 
@@ -100,7 +107,8 @@ h1 {
     align-items: center;
     text-align: center;
     margin-top: 90px;
-    margin-left: 325px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
     width: 850px;
     height: 115px;
@@ -121,17 +129,20 @@ h1 {
 }
 
 .cards {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 0.21fr);
 }
 
 .item:first-child {
-    margin-left: 274px;
+    margin: 0 auto;
 }
 
 .item {
-    margin-left: 30px;
+    margin-left: 20px;
     margin-bottom: auto;
     background: #F7F5F5;
     width: 300px;
@@ -153,10 +164,34 @@ h1 {
 
 .text_item p {
     text-align: left;   
-    padding: 25px 0 15px 25px;
+    padding: 25px 15px 15px 25px;
     font-family: 'Sen';
     font-size: 15px;
     font-weight: 600;
     color: #3D5975;
     line-height: 25px;
 }
+
+.cont_se4 {
+    height: 1000px;
+    background: none;
+}
+
+.video_bg {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;   
+}
+
+.cont_video {
+    width: 50%;
+}
+
+.cont_video h1 {
+    position: absolute;
+    font-family: 'Sen';
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+}
+
