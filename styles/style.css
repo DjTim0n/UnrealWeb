@@ -1,0 +1,162 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+body {
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Sen';
+}
+
+.cont {
+    max-width: 1520px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cont_header {
+    background: #EDCD1F;
+}
+
+.cont_ul {
+    margin-left: 350px;
+    background: #1E2D3B;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.ul {
+    margin-left: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.li>a {
+    font-size: 50px;
+    font-weight: 700px;
+    color: #fff;
+    margin: 0 90px 0 0;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 16px;
+}
+
+.li_current>a {
+    color: #EDCD1F;
+    margin: 0 90px 0 0;
+    transition: 0.25s;
+    font-size: 16px;
+}
+
+.li:hover>a {
+    color: #EDCD1F;
+}
+
+.li_current:hover>a {
+    color: #fff;
+}
+
+.img_se1 {
+    width: 100%;
+}
+
+.cont_se1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 1520px;
+    min-height: 1080px;
+    background: transparent url('https://all.accor.com/magazine/imagerie/1-619b.jpg') no-repeat center center / cover;
+
+}
+
+.text_se1 {
+    margin-top: 350px;
+    max-width: 1000px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Sen';
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.cont_se2 {
+    align-items: center;
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 325px;
+    margin-bottom: 100px;
+    width: 850px;
+    height: 115px;
+}
+
+.cont_se2 h2 {
+    font-family: 'Sen';
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+}
+
+.border_se2 {
+    margin-top: 35px;
+    margin-left: 364px;
+    width: 120px;
+    border-bottom: 10px solid #EDCD1F;
+}
+
+.cards {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 0.21fr);
+}
+
+.item:first-child {
+    margin-left: 274px;
+}
+
+.item {
+    margin-left: 30px;
+    margin-bottom: auto;
+    background: #F7F5F5;
+    width: 300px;
+    max-height: 672px;
+}
+
+.img_item {
+    width: 300px;
+}
+
+.text_item h1 {
+    padding: 25px 0 15px 25px;
+    text-align: left;
+    font-family: 'Sen';
+    font-size: 22px;
+    font-weight: 400;
+    color: #3D5975;
+}
+
+.text_item p {
+    text-align: left;   
+    padding: 25px 0 15px 25px;
+    font-family: 'Sen';
+    font-size: 15px;
+    font-weight: 600;
+    color: #3D5975;
+    line-height: 25px;
+}
