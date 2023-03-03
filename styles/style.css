@@ -28,6 +28,7 @@ body {
     width: 100%;
     overflow: hidden;
     height: 100px;
+    z-index: 99;
 }
 
 .cont_header {
@@ -294,4 +295,21 @@ body {
     font-family: 'Sen';
     font-size: 55px;
     font-weight: 400;
+}
+
+.cont_img_se6 { 
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.img_exicipia_se6 {
+    margin-bottom: 35px;
+}
+
+.img_vide_se6 {
+    margin-bottom: 63px;
+}
+
+.img_dehotel_se6 {
+    margin-bottom: 15px;
 }
